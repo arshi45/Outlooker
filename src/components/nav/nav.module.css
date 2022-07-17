@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid;
+    padding: 10px;
+    border-radius: 16px;
+    justify-content: space-between;
+}
+
+.nav button{
+    font-family: "Quicksand",sans-serif;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 8px;
+    padding: 6px;
+    border: solid;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav h1{
+    margin: unset;
+}
+
+
