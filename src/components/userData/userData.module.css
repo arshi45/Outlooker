@@ -1,0 +1,17 @@
+.userData{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: solid;
+    border-color: black;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.userData button{
+    background-color: transparent;
+    border: none;
+    font-family: "Literata",serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -32,6 +32,7 @@ const SignUp = ({setUser}) => {
         }).then((result) => {
             return result.json();
         }).then((data)=>{
+            localStorage.setItem("a",true);
             setUser(data);
         });
     }
@@ -47,6 +48,7 @@ const SignUp = ({setUser}) => {
         }).then((result) => {
             return result.json();
         }).then((data)=>{
+            localStorage.setItem("a",true);
             setUser(data);
         });
     }
@@ -65,25 +67,25 @@ const SignUp = ({setUser}) => {
         {form?
         signUp?
         <div className={styles.form}>
-            <h1>SignUp</h1>
-            <button onClick={handleForm}>SignIn</button>
+            <h1>Sign Up</h1>
             <form onSubmit={handleSubmit}>
                 <label>Email</label><br/>
                 <input type="email" onChange={handleChange} name="email"/><br/>
                 <label>Password</label><br/>
                 <input type="password" onChange={handleChange} name="pass"/><br/>
+                <button onClick={handleForm}>Login</button>
                 <button type="submit">Submit</button>
             </form>    
         </div>
         :
         <div className={styles.form}>
             <h1>Login</h1>
-            <button onClick={handleForm}>SignUp</button>
             <form onSubmit={handleLogin}>
                 <label>Email</label><br/>
                 <input type="email" onChange={handleChange} name="email"/><br/>
                 <label>Password</label><br/>
                 <input type="password" onChange={handleChange} name="pass"/><br/>
+                <button onClick={handleForm}>Sign Up</button>
                 <button type="submit">Submit</button>
             </form>    
         </div>

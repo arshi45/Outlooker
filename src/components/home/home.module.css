@@ -3,4 +3,86 @@
    padding: 10px;
    border-radius: 16px;
    margin-top: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.list{
+   justify-self: flex-end;
+}
+
+.weather{
+   flex-basis: 80vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: "Literata",serif;
+}
+
+.weather h1{
+   font-size: 10rem;
+   margin: unset;
+}
+
+h3{
+   font-size: 3rem;
+   margin: unset;
+}
+
+p{
+   margin-top: unset;
+}
+
+.subWeather{
+   font-family: "Literata",serif;
+   font-size: 1.8rem;
+   margin: unset;
+   display: flex;
+   flex-direction: row;
+   gap: 8vw;
+}
+
+.subWeather1{
+   font-family: "Literata",serif;
+   font-size: 1.8rem;
+   margin: unset;
+   display: flex;
+   flex-direction: row;
+   gap: 8vw;
+}
+
+.list{
+   display: flex;
+   flex-direction: column;
+}
+
+.buttons{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.buttons input{
+   border: solid;
+   background-color: white;
+   color: black;
+   font-family:"Quicksand",sans-serif;
+   outline: none;
+   border-radius: 14px;
+   padding:2px 8px;
+}
+
+.buttons input::placeholder{
+   color: black;
+}
+
+.buttons button{
+   background: transparent;
+   border:none;
+   cursor: pointer;
+}
+
+img{
+   width: 25px;
 }

@@ -7,10 +7,12 @@ const UserData = (props) => {
      
     const [userData,setUserData] = useState([]);
 
-    useEffect(() => {
-        fetch("http://locahost:3001/getUserData").then((result) => {
+    useEffect(() => { 
+        console.log("Running");
+        fetch("http://localhost:3001/getUserData")
+        .then((result) => {
             return result.json();
-        }).then((data)=>{
+        }).then((data) => {
             setUserData(data.cities);
         });
     },[]);
@@ -21,9 +23,10 @@ const UserData = (props) => {
 
     return (
         <div className={styles.userData}>
-            {userData.map((city) => {
-                return <button value={city} onClick={handleClick}>{city}</button>
-            })}
+            {userData.map( (city) => {
+                return <div><button value={city} onClick={handleClick}>{city}</button><br/></div>;
+            })
+            }
         </div>
     );
 }

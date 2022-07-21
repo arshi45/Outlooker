@@ -1,9 +1,27 @@
 .form{
-    position: relative;
+    position: absolute;
     z-index: 2;
+    right:30px;
+    border: solid;
+    border-radius: 8px;
+    border-color: black;
+    width: 15vw;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.form h1{
+    margin-bottom: 15px;
+    font-family: "Literata",serif;
+}
+
+.form input{
+    border: solid;
+    border-color: black;
+    border-radius: 16px;
+    padding:2px 8px;
 }
 
 form{
