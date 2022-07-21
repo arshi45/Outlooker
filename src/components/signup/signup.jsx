@@ -73,9 +73,9 @@ const SignUp = ({setUser}) => {
                 <input type="email" onChange={handleChange} name="email"/><br/>
                 <label>Password</label><br/>
                 <input type="password" onChange={handleChange} name="pass"/><br/>
-                <button onClick={handleForm}>Login</button>
                 <button type="submit">Submit</button>
-            </form>    
+            </form> 
+            <button onClick={handleForm}>Login</button>   
         </div>
         :
         <div className={styles.form}>
@@ -85,9 +85,9 @@ const SignUp = ({setUser}) => {
                 <input type="email" onChange={handleChange} name="email"/><br/>
                 <label>Password</label><br/>
                 <input type="password" onChange={handleChange} name="pass"/><br/>
-                <button onClick={handleForm}>Sign Up</button>
                 <button type="submit">Submit</button>
-            </form>    
+            </form>
+            <button onClick={handleForm}>Sign Up</button>    
         </div>
         :null}
     </div>
