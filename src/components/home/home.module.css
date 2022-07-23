@@ -86,3 +86,21 @@ p{
 img{
    width: 25px;
 }
+
+.holder{
+   box-sizing: border-box;
+   border: solid;
+   border-color: black;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 8vw;
+   margin: 8px;
+}
+
+.holder img{
+   width: 3vw;
+   margin-top: 16px;
+   margin-bottom: 4px;
+}

@@ -52,15 +52,33 @@ const Home = (props) => {
                     <h3>{weather.name}</h3>
                     <h1>{Math.round(weather.main.temp,1)}&#176;C</h1>
                     <p>({weather.weather[0].description.charAt(0).toUpperCase()+weather.weather[0].description.slice(1)})</p>
-                    <div className={styles.subWeather}>  
-                        <p>{weather.main.humidity}%</p>
-                        <p>{weather.main.temp_min}&#176;C</p>
-                        <p>{weather.main.temp_max}&#176;C</p>
+                    <div className={styles.subWeather}>
+                        <div className={styles.holder}>
+                            <img src="/humidity.png"/>
+                            <p>{weather.main.humidity}%</p>
+                        </div>
+                        <div className={styles.holder}>
+                            <img src="/cold.png"/>
+                            <p>{Math.round(weather.main.temp_min*10)/10}&#176;C</p>
+                        </div>
+                        <div className={styles.holder}>
+                            <img src="/hot.png"/>
+                            <p>{Math.round(weather.main.temp_max*10)/10}&#176;C</p>
+                        </div>  
                     </div>
-                    <div className={styles.subWeather1}>  
-                        <p>{weather.wind.speed}</p>
-                        <p>{weather.main.pressure} pa</p>
-                        <p>{weather.wind.deg}&#176;</p>
+                    <div className={styles.subWeather1}> 
+                        <div className={styles.holder}>
+                            <img src="/wind.png"/>
+                            <p>{weather.wind.speed}</p>
+                        </div> 
+                        <div className={styles.holder}>
+                            <img src="/barometer.png"/>
+                            <p>{weather.main.pressure} pa</p>
+                        </div>
+                        <div className={styles.holder}>
+                            <img src="/compass.png"/>
+                            <p>{weather.wind.deg}&#176;</p>
+                        </div>
                     </div>
                 </div>
                     :null}
